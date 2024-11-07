@@ -9,8 +9,10 @@ console.dir(img);
 
 button.addEventListener("click", function () {
 
-    img.src = "./img/yellow_lamp.png";
     button.innerHTML = "Spegni";
+    img.src = "./img/yellow_lamp.png";
+    img.alt = "yellow-lamp";
+
 }
 
 )
