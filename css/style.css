@@ -7,7 +7,29 @@
     box-sizing: border-box;
 }
 
-body {
+/* UTILITIES */
 
-    background-color: red;
+.debug {
+    border: 1px solid red;
 }
+
+
+
+/* BODY */
+
+h1 {
+
+    text-align: center;
+}
+
+.container {
+
+    max-width: 60%;
+    height: 500px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {}
