@@ -1,23 +1,32 @@
 "use strict";
 console.clear();
 
-const button = document.querySelector("button");
-console.dir(button);
-const img = document.querySelector("img");
-console.dir(img);
+const buttonImg = document.querySelector("button");
+console.dir(buttonImg);
+const lamp = document.querySelector("img");
+console.dir(lamp);
 
 
-button.addEventListener("click", function () {
+buttonImg.addEventListener("click", function () {
 
-    button.innerHTML = "Spegni";
-    img.src = "./img/yellow_lamp.png";
-    img.alt = "yellow-lamp";
+    if (lamp.src.includes("img/white_lamp.png")) {
+        lamp.src = "img/yellow_lamp.png";
+        lamp.alt = "yellow_lamp";
+        buttonImg.innerHTML = "Spegni";
 
+
+    } else {
+        lamp.src = "img/white_lamp.png";
+        lamp.alt = "white_lamp";
+        buttonImg.innerHTML = "Accendi";
+
+
+    }
 }
 
 )
 
-console.log(button.innerHTML);
+console.log(buttonImg.innerHTML);
 
 
 
